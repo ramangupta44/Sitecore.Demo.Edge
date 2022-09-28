@@ -208,7 +208,7 @@ const Template: ComponentStory<typeof HeroSection> = () => {
         <HeroSection {...heroProps} />
         <ThreeColumnsSection {...threeColProps} />
         <SelectedSponsorsGrid {...sponsorProps} />
-        <Video {...videoProps} />
+       <Video {...videoProps} />
       </main>
       <footer>
         <Footer {...mockFooterProps} />

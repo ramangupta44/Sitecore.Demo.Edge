@@ -39,7 +39,7 @@ const AttendeeForm = (): JSX.Element => {
 
   return (
     <form className="form attendee-registration-form" onSubmit={handleFormSubmit}>
-      <h2>Attendee Registration</h2>
+      <h2>Login</h2>
       <div className="floating-label-wrap">
         <input
           type="text"

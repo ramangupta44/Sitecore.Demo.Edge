@@ -11,7 +11,8 @@ export type VideoProps = ComponentProps & {
 
 const Video = (props: VideoProps): JSX.Element => (
   <>
-  <section className="section section--3-col"><h2 className="section__content__title">{props.params.Heading}</h2>
+  <section className="section section--3-col">
+    <h2 className="section__content__title">{props.params.Heading}</h2>
     </section></>
 );
 

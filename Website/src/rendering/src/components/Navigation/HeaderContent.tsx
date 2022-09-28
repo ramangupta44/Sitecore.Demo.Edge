@@ -39,6 +39,8 @@ const HeaderContent = (props: HeaderContentProps): JSX.Element => {
     <>
       <div className="header-eyebrow">
         <div className="content">
+
+
           <select
             onChange={(e) => changeLanguage(e.currentTarget.value)}
             className="languagePicker"
@@ -55,7 +57,7 @@ const HeaderContent = (props: HeaderContentProps): JSX.Element => {
               </option>
             ))}
           </select>
-
+          
           <Link href="/sign">
             <a className="languagePicker">Login</a>
           </Link>
