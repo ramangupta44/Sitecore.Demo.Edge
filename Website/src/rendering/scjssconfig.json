@@ -1,9 +1,9 @@
 {
   "sitecore": {
-    "instancePath": "..\\..\\docker\\deploy\\platform\\",
-    "apiKey": "1047aee5-9bcd-4dbf-9744-a26e12b79ab6",
-    "deploySecret": "511cdfab92b7440db866ac0fb817b490",
-    "deployUrl": "https://cm.edge.localhost/sitecore/api/jss/import",
-    "layoutServiceHost": "https://cm.edge.localhost"
+    "instancePath": "",
+    "apiKey": "1047AEE5-9BCD-4DBF-9744-A26E12B79AB6",
+    "deploySecret": "T4Cw0ea_!ck21?!760@WRf*e?86pKA@F",
+    "deployUrl": "https://espiredemocdp-cm.sitecoredemo.com/sitecore/api/jss/import",
+    "layoutServiceHost": "https://espiredemocdp-cm.sitecoredemo.com"
   }
 }

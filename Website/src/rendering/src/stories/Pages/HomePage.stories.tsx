@@ -15,10 +15,25 @@ import { Sponsor } from 'src/types/sponsor';
 import { SitecoreContext } from '@sitecore-jss/sitecore-jss-nextjs';
 import { mockComponentFactory, mockFooterProps, mockHeaderProps } from './PageStoriesCommon';
 import { mockSitecoreContext } from '../../../.storybook/preview';
+import Video, {VideoProps} from 'components/Home/Video';
 
 export default {
   title: 'Pages/Home Page',
 } as ComponentMeta<typeof HeroSection>;
+
+const videoProps = {
+  fields: {
+      Heading: {
+          value: 'Video Section',
+      },
+      Description: {
+        value: 'Sincere thanks to all our event partners and national sponsors that make this years Play! Summit possible.',
+      },
+      VideoSrc: {
+        value: 'https://www.espire.com/-/media/feature/home/videos/03touching-lives.ashx',
+      }  
+  }  
+} as VideoProps; 
 
 const heroProps = {
   fields: {
@@ -193,6 +208,7 @@ const Template: ComponentStory<typeof HeroSection> = () => {
         <HeroSection {...heroProps} />
         <ThreeColumnsSection {...threeColProps} />
         <SelectedSponsorsGrid {...sponsorProps} />
+        <Video {...videoProps} />
       </main>
       <footer>
         <Footer {...mockFooterProps} />

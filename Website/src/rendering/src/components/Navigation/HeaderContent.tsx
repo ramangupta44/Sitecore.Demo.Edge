@@ -56,6 +56,10 @@ const HeaderContent = (props: HeaderContentProps): JSX.Element => {
             ))}
           </select>
 
+          <Link href="/sign">
+            <a className="languagePicker">Login</a>
+          </Link>
+
           {props.fields?.data?.item?.children?.results?.map((item, index) => (
             <Link key={index} href={item.field?.jsonValue?.value?.href ?? '#'} prefetch={false}>
               <a>{item.displayName}</a>
