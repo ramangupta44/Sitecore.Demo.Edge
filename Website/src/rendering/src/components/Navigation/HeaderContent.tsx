@@ -39,6 +39,8 @@ const HeaderContent = (props: HeaderContentProps): JSX.Element => {
     <>
       <div className="header-eyebrow">
         <div className="content">
+
+
           <select
             onChange={(e) => changeLanguage(e.currentTarget.value)}
             className="languagePicker"
@@ -55,6 +57,10 @@ const HeaderContent = (props: HeaderContentProps): JSX.Element => {
               </option>
             ))}
           </select>
+
+          <Link className="languagePicker" href='#' style={{ 'marginTop': '5px;' }}>
+            <a>Login</a>
+          </Link>
 
           {props.fields?.data?.item?.children?.results?.map((item, index) => (
             <Link key={index} href={item.field?.jsonValue?.value?.href ?? '#'} prefetch={false}>
